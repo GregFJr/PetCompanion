@@ -49,7 +49,7 @@ const MedicationTab = () => {
             
             <form onSubmit={handleSubmit} className="w-full max-w-lg">
                 <div>
-                <label htmlFor="medication" className="block text-gray-700 text-sm font-bold mb-2">Medication:</label>
+                <label htmlFor="medication" className="block text-gray-700 text-sm font-bold mb-2">Medication(s):</label>
                 <input type="text" value={medication} onChange={handleMedicationChange} className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
                 </div>
                 <div>

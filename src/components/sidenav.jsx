@@ -39,6 +39,16 @@ const SideNav = ({ userId }) => {
       console.log("No user signed in.");
     }}
 
+    const handleAllergiesClick = () => {
+        const user = auth.currentUser;
+
+        if(user) {
+            navigate("/allergiestab");
+        } else {
+            console.log("No user signed in.");
+        }
+    }
+
     const handleMedicationClick = () => {
         const user = auth.currentUser;
 
@@ -66,6 +76,9 @@ const SideNav = ({ userId }) => {
         <ul className="mt-10 font-medium text-lg">
             <li>
                 <button onClick={handleAppointmentClick}>Appointments</button>
+            </li>
+            <li>
+                <button onClick={handleAllergiesClick}>Allergies</button>
             </li>
             <li>
                 <button onClick={handleMedicationClick}>Medication</button>

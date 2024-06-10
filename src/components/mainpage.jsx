@@ -57,7 +57,7 @@ const MainPage = ({ userId }) => {
     <div>
       <div className="flex">
       {appointments.map((appointment) => (
-        <div key={appointment.id} className="m-4 p-4 border rounded shadow h-64">
+        <div key={appointment.id} className="m-2 p-4 border rounded shadow h-40">
           <h2 className="text-lg font-bold">{appointment.date}</h2>
           <p className="text-xl">{appointment.description}</p>
         </div>
@@ -66,7 +66,7 @@ const MainPage = ({ userId }) => {
 
         <div className="flex">
       {medications.map((medication) => (
-        <div key={medication.id} className="m-4 p-4 border rounded shadow h-64">
+        <div key={medication.id} className="m-2 p-4 border rounded shadow h-40">
           <h2 className="text-lg font-bold">{medication.medication}</h2>
           <p className="text-xl">{medication.dosage}</p>
           <p className="text-xl">{medication.time}</p>
